@@ -20,6 +20,11 @@ app.get('/service', (req, res) => {
   res.send('💼 Premium Professional Services You Can Trust');
 });
 
+// General Error Handling
+app.use((err, req, res, next) => {
+  res.status(500).json({ message: 'Internal server error' });
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });

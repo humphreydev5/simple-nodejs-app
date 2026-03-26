@@ -15,6 +15,11 @@ app.get('/about', (req, res) => {
   res.send('This is a simple testing NodeJS Application');
 });
 
+// Service route
+app.get('/service', (req, res) => {
+  res.send('💼 Premium Professional Services You Can Trust');
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });

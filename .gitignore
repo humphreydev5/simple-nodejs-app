@@ -15,6 +15,7 @@ yarn-error.log*
 # Build folders
 dist/
 build/
+package-lock.json
 
 # OS files
 .DS_Store
@@ -28,5 +29,5 @@ Thumbs.db
 coverage/
 
 # Optional: lock files (uncomment if needed)
-# package-lock.json
+
 # yarn.lock
